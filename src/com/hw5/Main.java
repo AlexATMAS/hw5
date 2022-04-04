@@ -8,27 +8,32 @@ public class Main
     public static void main(String[] args)
     {
 
-///// Задача 1.1 & 3;
+///// Задача 1.1 & 3 & 4;
         int[] numA = new int[3];
         for (int index = 0; index < numA.length; index++)
         {
             numA[index] = index + 1;
-            if (index == numA.length - 1)
+            while (numA[index] % 2 != 0)
             {
-                System.out.println(numA[index]);
-                break;
+                numA[index]++;
             }
-        System.out.print(numA[index] + ", ");
-        }
-        for (int index = numA.length - 1; index >= 0; index--)
-        {
-            if ( index == 0)
-            {
-                System.out.println(numA[index]);
-                break;
-            }
-        System.out.print(numA[index] + ", ");
-        }
+
+                    if (index == numA.length - 1)
+                    {
+                        System.out.println(numA[index]);
+                        break;
+                    }
+                System.out.print(numA[index] + ", ");
+                }
+                for (int index = numA.length - 1; index >= 0; index--)
+                {
+                    if ( index == 0)
+                    {
+                        System.out.println(numA[index]);
+                        break;
+                    }
+                System.out.print(numA[index] + ", ");
+                }
 
 
  ///// Задача 1.2 & 3;
